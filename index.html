@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <meta name="description" content="This page refers to HTML Forms">
+    <link rel="icon" href="learn-html-forms.jpg">
+</head>
+
+<body>
+    <h1>Job Application</h1>
+    <form action="response.html" target="_blank">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label for="">First Name*</label>
+                    </td>
+                    <td><input type="text" required placeholder="Eg: Hari" autocomplete="" autocapitalize=""
+                            name="First_name"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name*</label></td>
+                    <td><input type="text" name="Last_name" id="" required placeholder="Eg: Devarinti" autocomplete=""
+                            autocapitalize=""> <br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="">Date of Birth*</label>
+                    </td>
+                    <td><input type="date" required placeholder="01-01-2000" name="Date_Of_Birth"> <br></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td><input type="radio" name="gender" id="M">Male
+                        <input type="radio" name="gender" id="F">Female
+                        <input type="radio" name="gender" id="O">Others
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Profile Picture</label>
+                    </td>
+                    <td><input type="file" name="Picture" id=""> <br>
+                    </td>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table>
+                <legend>Contact Information</legend>
+                <tr>
+                    <td><label for="">Email*</label>
+                    </td>
+                    <td><input type="email" name="Email" id="" required placeholder="hari123@gmail.com"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Phone Number*</label>
+                    </td>
+                    <td><input type="tel" required placeholder="9000000001" name="Phone_number"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="">Address*</label>
+                    </td>
+                    <td>
+                        <textarea name="Address" id="" required placeholder="Delhi" cols="45" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Country</label>
+                    </td>
+                    <td><select name="Country" id="">
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Australia">Australia</option>
+                        </select> <br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table>
+                <legend>Education Background</legend>
+                <tr>
+                    <td><label for="">Highest Qualification*</label>
+                    </td>
+                    <td><select name="Highest_Qualification" id="">
+                            <option value="None">None</option>
+                            <option value="SSC">SSC</option>
+                            <option value="UG">UG</option>
+                            <option value="PG">PG</option>
+                            <option value="Phd">Phd</option>
+                        </select> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Specialization*</label>
+                    </td>
+                    <td><input type="text" required placeholder="B.Tech" name="Specialization"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Year of Graduation*</label>
+                    </td>
+                    <td><input type="number" name="Year_Of_Graduation" id="" required placeholder="2025"> <br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table>
+                <legend>Job Preferences</legend>
+                <tr>
+                    <td><label for="">Preferred Role*</label>
+                    </td>
+                    <td> <input type="text" name="Preferred_role" id="" required placeholder="Developer"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Expected Salary*</label>
+                    </td>
+                    <td> <input type="number" required placeholder="6" name="Expected_Salary"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Preferred Locations</label>
+                    </td>
+                    <td><input type="checkbox" name="Banglore" id="">Banglore
+                        <input type="checkbox" name="Chennai" id="">Chennai
+                        <input type="checkbox" name="Hyderabad" id="">Hyderabad
+                        <input type="checkbox" name="Pune" id="">Pune <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Willing to Relocate</label>
+                    </td>
+                    <td><input type="checkbox" name="Yes" id="">Yes
+                        <input type="checkbox" name="No" id="">No <br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table>
+                <legend>Create Account</legend>
+                <tr>
+                    <td><label for="">Password*</label>
+                    </td>
+                    <td><input type="password" name="Password" id="" required placeholder="123456789" min="8" max="16">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="">Confirm Password*</label>
+                    </td>
+                    <td><input type="password" required placeholder="123456789" min="8" max="16"
+                            name="Confirm_Password">
+                        <br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table>
+                <legend>Resume</legend>
+                <tr>
+                    <td><label for="">Upload Resume (PDF Only)</label>
+                    </td>
+                    <td> <input type="file" name="Resume" id="">
+                    </td> <br>
+
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table>
+                <legend>Agreement</legend>
+                </tr>
+                <td><input type="checkbox" name="Agreement" id="">I agree to the terms and conditions
+                </td>
+                </tr> <br>
+                <tr>
+                    <td><input type="submit"></td>
+
+                    <td>
+                        <input type="reset">
+                    </td>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
